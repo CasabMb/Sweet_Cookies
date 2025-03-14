@@ -1,0 +1,9 @@
+#section_assortiment h4{
+    text-align: center;
+    margin: 90px 0;
+}
+@media (min-width: 1300px)  {
+    #section_assortiment h4{
+        margin: 222px 0;
+    }
+}

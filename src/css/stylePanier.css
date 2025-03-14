@@ -1,0 +1,240 @@
+.panier-container {
+    padding: 50px;
+    background-color: var(--secondary-color-200);
+    width: 70%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.panier-header{
+    text-align: center;
+    margin-top: 60px;
+}
+.panier-empty{
+    text-align: center;
+}
+
+.panier-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.panier-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--secondary-color-100);
+    border-radius: 5px;
+}
+
+.panier-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.panier-item-details {
+    flex-grow: 1;
+}
+
+.panier-item-title {
+    font-size: 18px;
+    margin: 0;
+    text-wrap: pretty;
+}
+
+.panier-item-price {
+    font-size: 16px;
+    color: #666;
+}
+
+.panier-quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+
+.panier-quantity-controls button {
+    border: 1px solid var(--secondary-color-600);
+    background-color: var(--secondary-color-200);
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px; 
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; 
+    padding: 0; 
+}
+
+.panier-quantity-controls button:first-child {
+    font-size: 17px;
+}
+
+.panier-quantity-controls button:last-child {
+    font-size: 16px;
+}
+
+.panier-quantity-controls button:hover {
+    background-color: var(--secondary-color-600);
+}
+
+.panier-quantity-controls span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.panier-item-remove {
+    margin-left: 20px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.panier-item-remove:hover {
+    background-color: #e60000;
+}
+
+.remove{
+    background-color: #ff4d4d;
+    width: 40px;
+    margin-left: 15px;
+}
+.remove img{
+width: 30px;
+height: auto;
+}
+.remove:hover{
+    background-color: #e60000;
+}
+
+
+@media (max-width: 600px){
+    .panier-container{
+        width: 90%;
+        padding: 15px;
+    }
+    .panier-quantity-controls button {
+        width: 20px; 
+        height: 20px; 
+        font-size: 14px; 
+    }
+    /* .panier-quantity-controls button:first-child {
+        font-size: 14px;
+    }
+    .panier-quantity-controls button:last-child {
+        font-size: 14px;
+    } */
+    .panier-item-title {
+        font-size: 14px;
+        margin: 0;
+        width: 65px; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media (max-width: 500px){
+    .panier-item-remove{
+        display: none;
+    }
+    
+}
+@media (min-width: 500px){
+    .remove{
+        display: none;
+    }
+}
+@media (max-width: 350px){
+    .remove{
+        width: 35px;
+        margin-left: 15px;
+    }
+    .remove img{
+        width: 25px;
+    }
+    .panier-item-title{
+        display: none;
+    }
+    .panier-quantity-controls button{
+        margin-left: 5px;
+    }
+}
+
+
+/** ___________________ Panier Ticket Component  ___________________**/
+.ticket{
+    display: flex;
+    flex-direction: column;
+}
+.panier_ticket{
+    background-color: var(--secondary-color-200);
+    width: 30%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    margin-right: 5%;
+    padding: 30px;
+    border-radius: 10px;
+}
+.panier_ticket h4{
+    text-align: center;
+    font-size: xx-large;
+}
+.panier_radio{
+    display: flex;
+    gap: 5px;
+}
+.panier_radio input[type="radio"] {
+    accent-color: var(--secondary-color-600);
+}
+.panier_ticket_details {
+    padding: 5px 15px 10px 15px;
+    margin-top: 5px;
+    background-color: var(--secondary-color-100);
+    text-align: center;
+    border-radius: 5px;
+}
+.panier_ticket_details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.right-align {
+    margin-left: auto; 
+    text-align: right; 
+}
+.total-articles {
+    margin-left: 5px; 
+    margin-right: 5px; 
+}
+.bold{
+    font-weight: bold;
+}
+.panier_ticket button{
+    padding: 10px;
+}
+
+@media (max-width: 600px){
+    .panier_ticket{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .panier_ticket_details {
+        padding: 5px 10px 10px 10px;
+    }
+    .panier_ticket{
+        padding: 20px;
+    }
+}
+@media (max-width: 600px){
+    .panier_ticket{
+        width: 90%;
+    }
+}
+

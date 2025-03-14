@@ -1,0 +1,288 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 20px 0 30px 0;
+    text-align: center;
+    overflow: hidden;
+    padding: 40px 0 110px 0;
+}
+.carousel h2{
+    display: flex;
+    align-self: start;
+    margin-left: 250px;
+}
+.carousel-content {
+    position: relative;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30%;
+}
+
+.carousel-title {
+font-size: 2rem;
+position: absolute;
+left: 15%;
+top: 35%;
+width: 60%;
+}
+#text-align{
+    text-align: start;
+}
+
+.carousel-description {
+    font-size: 1rem;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    width: 30%;
+}
+
+.carousel-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.carousel-image {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 500ms ease-in-out; 
+}
+
+.rotate-0 {
+    transform: rotate(0deg);
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.rotate-270 {
+    transform: rotate(270deg);
+}
+
+
+
+.chocolate-chip {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    filter: drop-shadow(0 25px 8px rgba(0, 0, 0, 0.37)); 
+    animation: float 2.5s ease-in-out infinite; 
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.chip-0 {
+    width: 50px;
+    height: auto;
+    top: -10px;
+    left: 15%;
+    transform: translateX(-50%);
+}
+
+.chip-1 {
+    width: 50px;
+    height: auto;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+.chip-2 {
+    width: 70px;
+    height: auto;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.chip-3 {
+    width: 80px;
+    height: auto;
+    top: 50%;
+    left: -50%;
+    transform: translateY(-50%);
+}
+.chip-whiteChoco2 {
+    width: 90px; 
+    height: auto; 
+    left: 30%;
+    top: -15%;
+}
+.chip-whiteChoco {
+    width: 100px; 
+    height: auto; 
+    top: 90%;
+}
+.chip-framboise2 {
+    width: 70px; 
+    height: auto; 
+
+}
+.chip-framboise1 {
+    width: 100px; 
+    height: auto; 
+    left: -35%;
+}
+
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px 10px 4px 10px ;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.carousel-button:hover .material-icons-outlined{
+    color: var(--text-color-light);
+}
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+
+.carousel-button.hidden {
+    display: none;
+}
+
+/** __________________ shape  divider __________________ **/
+#carousel_bg {
+    z-index: -1;
+    width: 100%; 
+    height: auto; 
+    position: absolute;
+    transform: translateX(9%);
+    top: -20%;
+}
+
+/* Media queries*/
+@media (max-width: 768px) {
+    #carousel_bg {
+        display: none;
+    } 
+    .carousel{
+        margin: 0;
+    }
+    .carousel h1{
+        font-size: 2rem;
+        margin-left: 20%;
+    }
+    .carousel-title {
+        font-size: 1.5rem;
+        left: 10%;
+        top: 10%;
+    }        
+    .carousel-description {
+        font-size: 1rem;
+        left: 10%;
+        width: 90%;
+        z-index: 1;
+        top: 25%;
+    }
+    .carousel-image {
+        width: 200px;
+    }
+    .chocolate-chip {
+        width: 50px;
+    }
+    .chip-0 {
+        left: 25%;
+        top: -30%;
+    }
+    .chip-1{
+        top: 10%;
+        left: 100%;
+    }
+    .chip-2 {
+        top: 100%;
+        left: 50%;
+    }
+    .chip-3 {
+        left: -30%;
+        top: 60%;
+    }
+    .chip-whiteChoco2 {
+        width: 70px; 
+        height: auto; 
+        top: -30px;
+    }
+    .chip-whiteChoco {
+        width: 70px; 
+        height: auto; 
+    }
+    .chip-framboise2 {
+        width: 60px; 
+        height: auto; 
+    }
+    .chip-framboise1 {
+        width: 80px; 
+        height: auto; 
+    }
+    .carousel{
+        padding-bottom: 270px;
+    }
+    .carousel-image-wrapper{
+        transform: translateY(85%);
+        left: -10%;
+    }
+    .carousel-button{
+        transform: translateY(150%);
+    }
+
+}
+
+
+
+@media (max-width: 1440px) {
+    #carousel_bg {
+        transform: translateX(-8%);
+    }
+}
+
+@media (min-width: 1440px) {
+    .carousel{
+        padding-bottom: 120px;
+    }
+    #carousel_bg {
+        transform: translateX(28%);
+    }
+    .carousel h1{
+        font-size: 3rem;
+        margin-left: 25%;
+    }
+    .carousel-title {
+        font-size: 2.1rem;
+        left: 13%;
+    }        
+    .carousel-description {
+        font-size: 1.1rem;
+        left: 13%;
+        width: 25%;
+    }        
+    .carousel-image {
+        width: 400px;
+    }
+    .chocolate-chip {
+        width: 80px;
+    }
+}

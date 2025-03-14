@@ -1,0 +1,313 @@
+#mes_commandes{
+    padding: 0 2% 0 2%;
+}
+.evolution_img {
+    width: 50px; 
+    height: 50px;
+    background-color: var(--secondary-color-200);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border: 2px solid transparent;
+}
+
+.evolution_img.active {
+    border-color: green;
+}
+
+.sent {
+    padding: 7px;
+}
+
+#evolution_bar {
+    display: flex;
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center;
+    margin: auto;
+    padding: 5% 0;
+    width: 100%;
+}
+
+.progress_bar_divider {
+    width: 70px;
+    border-bottom: 1.5px solid var(--secondary-color-800);
+}
+
+#mes_commandes h2{
+    text-align: center;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .evolution_img {
+        padding: 9px;
+    }
+    
+    .sent {
+        padding: 5px; 
+    }
+
+    #evolution_bar {
+        gap: 15px;
+        width: 95%;
+    }
+
+    .progress_bar_divider {
+        width: 60px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .evolution_img {
+        padding: 7px;
+    }
+    
+    .sent {
+        padding: 3px;
+    }
+
+    #evolution_bar {
+        gap: 10px;
+    }
+
+    .progress_bar_divider {
+        width: 25px;
+    }
+}
+@media (max-width: 320px){
+    .progress_bar_divider{
+        width: 10px;
+    }
+}
+
+
+
+
+/** ___________________ details_commande_en_cours  ___________________**/
+
+
+#details_commande_en_cours{
+    padding: 0 10%;
+    cursor: pointer;
+}
+.infos_commande{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.space{
+    margin-left: 2px;
+}
+.cookie-name{
+    font-size: 1.1rem;
+}
+
+
+.details_commande {
+    padding: 20px;
+    display: flex;
+
+    justify-content: center;
+}
+
+.details_commande_card {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.detail_item {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--secondary-color-200);
+    width: 300px; 
+}
+
+.detail_image {
+    margin-right: 20px;
+    background-color: var(--secondary-color-100);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cookie-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.detail_info {
+    flex: 1;
+}
+
+.detail_info p {
+    margin: 5px 0;
+}
+
+.infos_details_commande{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+.commande{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.images_cookies_commande_en_cours {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10%;
+    gap: 5%;
+}
+
+.cookie-item {
+    background-color: var(--secondary-color-200);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    width: 250px;
+    height: auto;
+}
+.cookie-image_container{
+    background-color: var(--secondary-color-100);
+    padding: 10px;
+    border-radius: 5px;
+}
+.cookie-image {
+    width: 60px; 
+    height: auto;
+}
+
+@media (max-width: 350px){
+    .infos_details_commande div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        line-height: 0.5;
+    }
+}
+
+
+
+
+
+
+/** ___________________ historique commandes  ___________________**/
+.historique_commande_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;    
+    
+}
+#historique_commandes h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+#historique_commandes {
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+.infos_historique{
+    display: flex;
+    gap: 40px;
+}
+.historique_commande_card{
+    background-color: var(--secondary-color-100);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.historique_commande_img{
+    display: flex;
+    gap: 20px;
+    width: 60px;
+    margin: 10px 0;
+}
+#historique_card{
+    position: relative;
+}
+#historique_card button{
+    position: absolute;
+    top: 32%;
+    right: 0;
+    margin-right: 10px;
+    width: 125px;
+    height: 60px;
+    color: var(--text-color);
+}
+#historique_card button>span{
+    margin: 0 8px;
+}
+
+
+@media (max-width: 1100px){
+    .infos_historique{
+        flex-direction: column;
+        gap: 5px;
+        font-size: small;
+    }
+    .historique_commande_img img{
+        width: 60px;
+    }
+    .historique_commande_img{
+        overflow: hidden;
+        margin: 10px 0 0 0;
+        width: 470px;
+    }
+}
+@media (max-width: 950px){
+    .historique_commande_img img{
+        width: 50px;
+    }
+
+}
+@media (max-width: 768px){
+    
+    #historique_card button{
+        position: absolute;
+    }
+    .historique_commande_img{
+        width: 270px;
+    }
+}
+@media (max-width: 500px){
+    #historique_card button{
+        width: 100px;
+    }
+    .historique_commande_img{
+        width: 120px;
+    }
+}
+@media (max-width: 350px){
+
+    #historique_card button{
+        width: 80px;
+        top: 32%;
+    }
+
+}
+@media (max-width: 315px){
+
+    #historique_card button{
+        top: 65%;
+    }
+
+}
+

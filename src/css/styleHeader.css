@@ -1,0 +1,132 @@
+  header {
+  background-color: var(--secondary-color-200);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px 10px 100px;
+  align-items: center;
+  border-bottom: 1.5px solid var(--secondary-color-800);
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: auto;
+}
+
+header li {
+  cursor: pointer;
+  font-family: jomolhari;
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+header li::before {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 0;   
+  width: 100%;
+  height: 2px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 0.6s ease; 
+}
+
+header li.active::before {
+  transform: scaleX(1);
+  background-color: var(--secondary-color-800);
+}
+header li:hover::before{
+  transform: scaleX(1);
+}
+
+#header_icons_deconnecte {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  gap: 20px;
+  margin-right: 40px;
+}
+#header_icons_connecte {
+  display: flex;
+  padding-bottom: 5px;
+  gap: 20px;
+  margin-right: 40px;
+}
+
+#icon_connexion {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#icon_shopping_bag {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#icon_shopping_bag img {
+    margin-bottom: 8px;
+}
+
+#logo {
+  width: 90px;
+  cursor: pointer;
+}
+
+
+/* Styles pour le menu en mode plein écran */
+header div.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--secondary-color-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+  transition: transform 0.5s ease-in-out;
+  overflow-y: auto; 
+}
+
+header div.open ul {
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+header div.open li {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+/* Masquer le menu par défaut sur mobile */
+@media screen and (max-width: 900px) {
+  header div:not(.open) ul {
+    display: none;
+  }
+  #header_icons_connecte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(15%);
+  }
+}
+@media (max-width: 350px) {
+  header div.open li {
+    font-size: 1.1rem;
+  }
+  header div.open{
+    padding: 300px 0 100px 0;
+  }
+}

@@ -1,0 +1,220 @@
+#profil{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 5% 30px 5%;
+}
+
+#section_redirect{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  justify-content: center; 
+  margin: auto;
+}
+
+.profil_redirect {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid var(--secondary-color-400);
+  border-radius: 10px;
+  align-items: center;
+  transition: all 200ms linear;
+}
+
+.profil_redirect img{
+  width: 25px;
+}
+
+.profil_redirect span{
+  cursor: pointer;
+}
+
+.profil_redirect:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color-400);
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro p{
+  margin-bottom: 50px;
+}
+  
+/* __________ page Profil QUERI __________ */
+@media (max-width: 500px){
+  #section_redirect {
+    display: flex;
+  }
+
+}
+@media (max-width: 768px){
+  #profil{
+    text-align: center;
+  }
+  .profil_p{
+    width: 80%;
+  }
+  #section_redirect{
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+  }
+  .profil_redirect{
+    width: 100%;
+  }
+}
+@media (min-width: 800px){
+  #section_redirect {
+    padding-left: 0;
+    margin-top: 3%;
+  }
+  .profil_bag img{
+    width: 25px;
+    height: 30px;
+  }
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~ Mes infos personnelles ~~~~~~~~~~~~~~~~~~~~ */
+#infos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5% auto 15% auto ;
+  text-align: center;
+}
+#formulaire_profil{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#infos_content{
+  margin-top: 10px;
+}
+#formulaire_profil input{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10px;
+  width: 500px;
+  max-width: 100%;
+  height: 40px;
+  background-color:var(--secondary-color-200-transparent);
+  border: none;
+  padding: 13px 20px;
+  box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+#formulaire_profil input:focus,
+#formulaire_profil input:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px 0 var(--secondary-color-400);
+}
+#formulaire_profil input[type=submit]{
+  padding-top: 0;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 200ms linear;
+  padding: 0 15px;
+  letter-spacing: 1px;
+  margin: auto;
+  border: none;
+  background-color: var(--secondary-color-400);
+  color: var(--text-color);
+  box-shadow: 0 8px 24px 0 rgba(68, 53, 4, 0.322);
+}
+#formulaire_profil input[type=submit]:active,
+#formulaire_profil input[type=submit]:focus{  
+  background-color: var(--secondary-color-600);
+  color: var(--text-color-light);
+  box-shadow: 0 8px 24px 0 rgba(68, 53, 4, 0.322);
+}
+#formulaire_profil input[type=submit]:hover{  
+  background-color: var(--secondary-color-600);
+  color: var(--text-color-light);
+  box-shadow: 0 8px 24px 0 rgba(68, 53, 4, 0.322);
+}
+#cookies_img_infosUpdate{
+  position: relative; 
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cookie_infosUpdate1{
+  width: 100px; 
+  position: absolute;
+  left: 80%; 
+  transform: translateY(25%);
+  z-index: -1;
+  filter: blur(1px);
+} 
+
+#cookie_infosUpdate2{
+  width: 200px; 
+  position: absolute;
+  left: 92%; 
+  transform: translateY(0%);
+}
+
+/* __________ infos personnelles QUERI __________ */
+@media (max-width: 1000px){
+  #cookie_infosUpdate2{
+    width: 150px;
+  }
+}
+@media (max-width: 768px){
+  #infos_content {
+    width: 80%;
+  }
+  #cookies_img_infosUpdate{
+    margin-bottom: 5%;
+  }
+  #cookie_infosUpdate1{
+    left: 70%; 
+    width: 70px;
+  }
+  #cookie_infosUpdate2{
+    left: 75%;   
+  }
+  #formulaire_profil input,
+  #formulaire_profil input[type=submit]{
+    width: 350px;
+  }
+}
+
+@media (max-width: 499px){
+  #infos h1{
+    font-size: x-large;
+    width: 98%;
+  }
+  #formulaire_profil input,
+  #formulaire_profil input[type=submit]{
+    width: 300px;
+  }
+  #cookie_infosUpdate1{
+    width: 50px;
+  }
+  #cookie_infosUpdate2{
+    width: 80px;
+  }
+}
+
+@media (max-width: 350px){
+  #formulaire_profil input,
+  #formulaire_profil input[type=submit]{
+    width: 250px;
+  }
+
+}
+

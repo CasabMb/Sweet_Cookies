@@ -1,0 +1,134 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 100px 0;
+  }
+  #contact p {
+    width: 46%;
+    text-align: center;
+  }
+  #formulaire_contact input{
+    padding-left: 10px;
+    width: 500px;
+    max-width: 100%;
+    height: 40px;
+    background-color:var(--secondary-color-200-transparent);
+    border: none;
+    padding: 13px 20px;
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  }
+  #formulaire_contact input:focus,
+  #formulaire_contact input:active {
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0 var(--secondary-color-400);
+}
+  #formulaire_contact input[type=submit]{
+  border-radius: 4px;
+  height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 200ms linear;
+  padding: 0 15px;
+  letter-spacing: 1px;
+  margin: auto;
+  border: none;
+  background-color: var(--secondary-color-400);
+  color: var(--text-color);
+  box-shadow: 0 8px 24px 0 rgba(68, 53, 4, 0.322);
+  }
+#formulaire_contact input[type=submit]:active,
+#formulaire_contact input[type=submit]:focus{  
+  background-color: var(--secondary-color-600);
+  color: var(--text-color-light);
+  box-shadow: 0 8px 24px 0 rgba(68, 53, 4, 0.322);
+}
+#formulaire_contact input[type=submit]:hover{  
+  background-color: var(--secondary-color-600);
+  color: var(--text-color-light);
+  box-shadow: 0 8px 24px 0 rgba(68, 53, 4, 0.322);
+}
+
+  #formulaire_contact textarea{
+    padding-left: 10px;
+    background-color: var(--secondary-color-200-transparent);
+    border: none;
+    border-radius: 5px;
+    height: 100px;
+    box-shadow: 0 8px 24px 0 rgba(68, 53, 4, 0.322);
+  }
+  #formulaire_contact textarea:focus{
+    outline-color: var(--secondary-color-400);
+  }
+  #contact form{
+    font-family: jomolhari;
+    background-color: var(--secondary-color-200-transparent);
+    padding: 50px;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px 0 rgba(21,21,21,.2);
+  
+  }
+  #cookies_contact{
+    position: relative;
+  }
+  #cookie_contact1{
+    position: absolute;
+    bottom: -50px;
+    left: 560px;
+    width: 15%;
+    z-index: -1;
+    filter: blur(1px);
+  }
+  #cookie_contact2{
+    position: absolute;
+    bottom: -40px;
+    left: 570px;
+    width: 30%;
+    z-index: 2;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 768px) {
+    #formulaire_contact{
+      width: 90%;
+    }
+    #contact form{
+      left: 2%;
+      padding: 20px;
+    }
+    #cookie_contact1{
+      left: 75%;
+      bottom: -60px;
+    }
+    #cookie_contact2{
+      left: 80%;
+      bottom: -85px;
+    } 
+    #contact p {
+      width: 80%;
+      text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+  #contact form{
+    left: 0%;
+    padding: 20px;
+  }
+  #cookie_contact1{
+    width: 60px;
+    left: 70%;
+    bottom: -60px;
+  }
+  #cookie_contact2{
+  left: 75%;
+  }
+}
+
+@media (min-width: 1440px){
+
+}
+

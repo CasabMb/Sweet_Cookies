@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: var(--text-color);
+}
+@font-face {
+  font-family: lemonShake;
+  src: url(../src/asset/fonts/Lemon\ Shake\ Shake.ttf);
+}
+@font-face {
+  font-family: magiesta;
+  src: url(../src/asset/fonts/Magiesta.ttf);
+}
+@font-face {
+  font-family: jomolhari;
+  src: url(../src/asset/fonts/Jomolhari-Regular.ttf);
+}
+:root{
+  --primary-color: #8E735D;
+  --primary-color-400: #C1AFA0;
+  --primary-color-600: #A28771;
+  --primary-color-900: #4F4034;
+  --secondary-color: #C7AF8E;
+  --background-color: #FBF8F3;
+  --text-color: #302418;
+  --text-color-light: #F9F3F0;
+  --secondary-color-100: #f4eee8;
+  --secondary-color-200: #E9DED2;
+  --secondary-color-200-transparent: #e9ded277;
+  --secondary-color-400: #D2BDA5;
+  --secondary-color-600: #AD8559;
+  --secondary-color-800: #7B5D3D;
+  --color-invalid: #c03744;
+  --color-valid: #15b097;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+}
+h1{
+  font-family: lemonShake;
+}
+h2{
+  font-family: lemonShake;
+}
+h3{
+  font-family: lemonShake;
+}
+h4{
+  font-family: magiesta;
+  font-weight: bold;
+}
+h5{
+  font-family: magiesta;
+  font-weight: bold;
+  font-size: xx-large;
+}
+h6{
+  font-family: jomolhari;
+}
+p{
+  font-family: jomolhari;
+  /* font-size: small; */
+}
+button{
+  background-color: var(--secondary-color-400);
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+
+  transition: all 200ms linear;
+}
+button:hover{
+  background-color: var(--secondary-color-600);
+  color: var(--text-color-light);
+  box-shadow: 0 8px 20px 0 var(--secondary-color-600);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* _______________________footer_______________________*/
+
+footer {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 2% 5%;
+  align-items: center;
+  position: relative; 
+  background-color: #F4EEE8; 
+  z-index: 1; 
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.footerSvg {
+  position: absolute;
+  z-index: -1; 
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: auto; 
+  object-fit: cover; 
+}
+
+#footer_line {
+  border: 0.5px solid var(--secondary-color-400);
+  width: 95%;
+}
+
+#footer_top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin-top: 60px;
+}
+
+#footer_top ul {
+  display: flex;
+  align-self: start;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+#footer_top li {
+  font-size: small;
+}
+
+#paiement {
+  display: flex;
+  align-self: end;
+}
+
+#paiement img {
+  width: 110px;
+}
+
+#footer_bottom {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+}
+
+#footer_bottom ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+#footer_bottom li {
+  font-size: small;
+}
+
+#footer_bottom img {
+  width: 20px;
+}
+
+#logo2 img {
+  width: 80px;
+}
+
+@media (max-width: 768px){
+  #footer_top ul{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 10px;
+  }
+  #footer_top{
+    gap: 5px;
+  }
+
+  .footerSvg {
+    width: 80vw; /* Rétrécit la largeur du SVG à 80% de la largeur de la fenêtre */
+    height: auto;
+    top: 0px; /* Ajuste la position verticale si nécessaire */
+    left: 15%; /* Centre horizontalement */
+    transform: translateX(-50%); /* Centrage précis du SVG */
+  }
+
+  #footer_bottom ul {
+    margin-bottom: 30px;
+    gap: 30px;
+  }
+  #footer_bottom img {
+    width: 25px;
+  }
+}
+
+
+
+
+
+
+
+
+/* _______________________A propos_______________________*/
+#apropos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+#apropos p{
+  width: 50%;
+  margin-top: 60px;
+}
+#image_apropos{
+  display: flex;
+  align-self: flex-start;
+  padding-left: 6%;
+  width: 450px;
+}
+
+@media (max-width: 768px) {
+  #apropos p{
+    width: 80%;
+    margin-top: 20px;
+    font-size: small;
+  }
+  #image_apropos{
+    display: flex;
+    align-self: flex-start;
+    padding-left: 6%;
+    width: 190px;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+

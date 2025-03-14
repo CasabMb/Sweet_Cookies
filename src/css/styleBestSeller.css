@@ -1,0 +1,55 @@
+#best-seller{
+    text-align: center;
+    margin: 8% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#best-seller h1{
+    margin-bottom: 3%;
+    font-size: 1.8rem;
+    width: 60%;
+    text-align: center;
+}
+#best-seller p{
+    width: 80%;
+    text-align: center;
+}
+.best_seller {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+}
+.cookies_card {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+@media (max-width: 576px){
+
+}
+
+@media (max-width: 768px) {
+    .best_seller {
+        /* flex-direction: column; */
+        align-items: center;
+        flex-wrap: wrap;
+        transform: translateX(-2%);
+    }
+    
+}
+
+@media (max-width: 992px){
+    .best_seller {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 1200px){
+
+}
+@media (max-width: 1400px){
+
+}
