@@ -54,7 +54,7 @@ Développé dans le cadre du projet **DWWM**, ce site utilise une **architecture
 
 
 #### 📌 À venir :
-- Espace administrateur pour gérer les produits (ajout, modification, suppression).
+- Espace administrateur.
 
 
 ---
