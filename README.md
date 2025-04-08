@@ -57,7 +57,11 @@ Développé dans le cadre du projet **DWWM**, ce site utilise une **architecture
 - Espace administrateur.
 
 
-![Capture d'écran 2024-09-13 122424](https://github.com/user-attachments/assets/3d6c17c0-5938-4b35-91a5-8aadc552ed86)
+## 📸 Aperçu
+<img src="https://github.com/user-attachments/assets/3c502b2c-2369-4127-a1a4-b005c6f6c66d" alt="Home page" width="1000"/>
+<img src="https://github.com/user-attachments/assets/f07e2104-25f7-476d-85d6-3d495346f589" alt="Commande en cours" width="1000"/>
+<img src="https://github.com/user-attachments/assets/1e1ce7e3-7a53-4ec6-9335-f7eec746563e" alt="Suivi de commande" width="1000"/>
+
 ---
 
 ## ⚙️ Installation et configuration  
