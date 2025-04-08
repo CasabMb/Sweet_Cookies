@@ -59,7 +59,7 @@ Développé dans le cadre du projet **DWWM**, ce site utilise une **architecture
 
 ## 📸 Aperçu
 <img src="https://github.com/user-attachments/assets/3c502b2c-2369-4127-a1a4-b005c6f6c66d" alt="Home page" width="1000"/>
-<img src="https://github.com/user-attachments/assets/f07e2104-25f7-476d-85d6-3d495346f589" alt="Commande en cours" width="1000"/>
+<img src="https://github.com/user-attachments/assets/d7141ea4-d22d-4769-8a07-ad0f658be5c9" alt="Commande en cours" width="1000"/>
 <img src="https://github.com/user-attachments/assets/1e1ce7e3-7a53-4ec6-9335-f7eec746563e" alt="Suivi de commande" width="1000"/>
 
 ---
