@@ -56,7 +56,9 @@ Développé dans le cadre du projet **DWWM**, ce site utilise une **architecture
 #### 📌 À venir :
 - Espace administrateur.
 
+<img src="https://github.com/user-attachments/assets/02dec960-ce55-41e2-b72c-86823ade55b4" alt="home-page" width="400">
 
+![Capture d'écran 2024-09-13 122424](https://github.com/user-attachments/assets/3d6c17c0-5938-4b35-91a5-8aadc552ed86)
 ---
 
 ## ⚙️ Installation et configuration  
@@ -66,8 +68,4 @@ Développé dans le cadre du projet **DWWM**, ce site utilise une **architecture
 git clone https://github.com/CasabMb/Sweet_Cookies.git
 
 
-
-<img src="https://github.com/user-attachments/assets/02dec960-ce55-41e2-b72c-86823ade55b4" alt="home-page" width="400">
-
-![Capture d'écran 2024-09-13 122424](https://github.com/user-attachments/assets/3d6c17c0-5938-4b35-91a5-8aadc552ed86)
 
